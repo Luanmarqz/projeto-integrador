@@ -187,6 +187,12 @@ a {
   flex-grow: 1;
   width: 50%;
 }
+
+.signup-column {
+  padding-left: 0px;
+  margin-top: 90px;
+}
+
 .login-left {
   background: url("./images/celular01.png") center/450px no-repeat;
   height: 600px;
@@ -577,7 +583,7 @@ footer a {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 430px) {
   .index-about img {
     width: 90%;
     margin-bottom: 70px;
@@ -599,5 +605,17 @@ footer a {
   }
   .index-barbeiros {
     height: 100vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 34rem;
+  }
+
+  .signup-column {
+    padding-left: 0px;
+    margin-top: 90px;
   }
 }
