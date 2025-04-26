@@ -62,7 +62,7 @@ a {
   width: 100%;
   height: 100vh;
   background: #000 url("./images/barbearia02.png") no-repeat left center;
-  background-size: cover;
+  background-size: fill;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -367,7 +367,8 @@ input:focus {
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  height: 580px;
+  height: 400px;
+  margin-top: 102px;
 }
 
 .sidebar h3 {
@@ -413,9 +414,10 @@ input:focus {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  width: 20%;
+  width: 70%;
   padding: 12px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 .pag_inicial-pesquisa span {
   color: #666;
@@ -464,6 +466,13 @@ input:focus {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
+.recomendados {
+  margin-left: 15px;
+}
+.recomendados p {
+  font-size: 16px;
+  font-weight: bold;
+}
 
 /* Footer */
 footer {
@@ -495,18 +504,38 @@ footer a {
 /* Media Queries */
 
 @media (max-width: 768px) {
-  .pag_inicial-pesquisa {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
   .container_inicial {
     flex-direction: column;
   }
+  .pag_inicial-pesquisa {
+    width: 100%;
+  }
 
   .sidebar {
-    width: 100%;
+    display: none;
+  }
+  .index-barbeiros-list {
+    display: flex;
+    /* margin-bottom: 20px; */
+    height: 20rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: fit-content;
+  }
+
+  .pag_inicial-pesquisa {
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .pag_inicial-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 5px;
+  }
+  .recomendados {
+    padding-left: 15px;
   }
 }
 
@@ -548,6 +577,24 @@ footer a {
 
   footer p {
     margin: 0;
+  }
+  .index-barbeiros-list {
+    display: flex;
+    /* margin-bottom: 20px; */
+    height: 20rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .index-barbeiros-list {
+    display: flex;
+    /* margin-bottom: 20px; */
+    height: 20rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 60rem;
   }
 }
 
@@ -607,7 +654,7 @@ footer a {
     height: 100vh;
   }
 
-  form {
+  .form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -617,5 +664,18 @@ footer a {
   .signup-column {
     padding-left: 0px;
     margin-top: 90px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .pag_inicial-pesquisa {
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .pag_inicial-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 5px;
   }
 }
