@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberTech</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="images/logo_barbertech.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-left">
+        <p>Pagina Inicial</p>
+      </div>
+      <div class="nav-right">
+        <div
+          class="pag_inicial-profile-container"
+          id="pag_inicial-profileContainer"
+        >
+          <div
+            class="pag_inicial-profile-button"
+            id="pag_inicial-profileButton"
+          >
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+          </div>
+          <div class="pag_inicial-dropdown" id="pag_inicial-dropdownMenu">
+            <a href="#">Meu Perfil</a>
+            <a href="#">Agendamentos</a>
+            <a href="index.html">Sair</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <span class="back-button"
+      ><a href="pag_inicial.html"><i class="fa-solid fa-arrow-left"></i></a
+    ></span>
+
+    <div class="card-produto">
+      <div class="card-header">
+        <div class="card-img">
+          <img src="images/43cb8025cbcd0308ac46e02a16e01483.jpg" alt="" />
+        </div>
+      </div>
+      <div class="card-body">
+        <h2>Corte e Barba</h2>
+        <div class="card-info">
+          <div class="card-preco">R$ 30,00</div>
+          <p>Corte e Barba na Barbearia do Junior</p>
+        </div>
+        <div class="card-data">
+          <div class="data">
+            <h4>Data</h4>
+            <input type="date" />
+          </div>
+          <div class="horario">
+            <h4>Horario</h4>
+            <input type="time" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-agendar">
+            <button>Agendar</button>
+          </div>
+          <div class="card-descricao">
+            <h4>Descrição</h4>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avaliacoes">
+      <h1>Ultimas Avaliações</h1>
+      <div class="avaliacoes-container">
+        <div class="avaliacoes-card">
+          <div class="avaliacoes-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="avaliacoes-info">
+            <h2>Titulo da avaliacao</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="avaliacoes-card">
+          <div class="avaliacoes-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="avaliacoes-info">
+            <h2>Titulo da avaliacao</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="avaliacoes-card">
+          <div class="avaliacoes-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="avaliacoes-info">
+            <h2>Titulo da avaliacao</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

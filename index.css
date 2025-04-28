@@ -314,7 +314,6 @@ input:focus {
   display: flex;
   padding-top: 10rem;
   min-height: 100vh;
-  gap: 30px;
   flex-wrap: wrap;
 }
 .pag_inicial-profile-container {
@@ -362,12 +361,12 @@ input:focus {
 }
 
 .sidebar {
-  width: 250px;
+  width: 300px;
   background: #fff;
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  height: 400px;
+  height: 500px;
   margin-top: 102px;
 }
 
@@ -432,18 +431,18 @@ input:focus {
 }
 
 .pag_inicial-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  margin-right: 10px;
+  display: flex;
+  gap: 7px;
+  justify-content: space-evenly;
 }
 .pag_inicial-card {
   background: #fff;
-  height: 250px;
+  height: 280 px;
   border-radius: 8px;
   padding: 12px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  width: 320px;
 }
 .pag_inicial-card img {
   width: 100%;
@@ -467,11 +466,129 @@ input:focus {
   transition: transform 0.3s ease-in-out;
 }
 .recomendados {
-  margin-left: 15px;
+  margin-left: 60px;
 }
 .recomendados p {
   font-size: 16px;
   font-weight: bold;
+}
+
+/* Barbeiros */
+
+.back-button {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.back-button a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.card-header {
+  margin-right: 5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-self: self-start;
+}
+
+.card-img img {
+  width: 400px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.card-preco {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-info p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.card-data {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.card-data input {
+  width: 200px;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+.card-footer button {
+  width: 425px;
+  height: 35px;
+  font-weight: bold;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card-descricao {
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  width: 425px;
+  height: 80px;
+}
+
+.avaliacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.avaliacoes-card {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.avaliacoes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.avaliacoes-info h2 {
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -503,39 +620,46 @@ footer a {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
-  .container_inicial {
-    flex-direction: column;
-  }
-  .pag_inicial-pesquisa {
-    width: 100%;
-  }
-
-  .sidebar {
-    display: none;
-  }
-  .index-barbeiros-list {
+@media (max-width: 1470px) {
+  .pag_inicial-container_inicial {
     display: flex;
-    /* margin-bottom: 20px; */
-    height: 20rem;
+    padding-top: 10rem;
+    min-height: 100vh;
+    gap: 10px;
     flex-wrap: nowrap;
-    justify-content: center;
-    max-width: fit-content;
   }
-
-  .pag_inicial-pesquisa {
-    width: 80%;
-    align-items: center;
-    margin: 0 auto;
+  .pag_inicial-card {
+    background: #fff;
+    height: 280 px;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 200px;
   }
 
   .pag_inicial-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding-left: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
   }
-  .recomendados {
-    padding-left: 15px;
+  .sidebar {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    margin-top: 102px;
+  }
+  .pag_inicial-pesquisa {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 12px;
+    margin-left: 50px;
   }
 }
 
@@ -580,10 +704,14 @@ footer a {
   }
   .index-barbeiros-list {
     display: flex;
-    /* margin-bottom: 20px; */
     height: 20rem;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+  .pag_inicial-cards-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 95%;
   }
 }
 
@@ -609,6 +737,42 @@ footer a {
 
   .login-right {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_inicial {
+    flex-direction: column;
+  }
+  .pag_inicial-pesquisa {
+    width: 100%;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .index-barbeiros-list {
+    display: flex;
+    /* margin-bottom: 20px; */
+    height: 20rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: fit-content;
+  }
+
+  .pag_inicial-pesquisa {
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .pag_inicial-cards-grid {
+    margin: 0 auto;
+    display: flex;
+    width: 89%;
+  }
+  .recomendados {
+    padding-left: 5px;
   }
 }
 
@@ -674,8 +838,28 @@ footer a {
     margin: 0 auto;
   }
   .pag_inicial-cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    padding-left: 5px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+}
+
+@media (max-width: 375px) {
+  .pag_inicial-cards-grid {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .pag_inicial-card {
+    background: #fff;
+    height: 280 px;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 350px;
   }
 }
