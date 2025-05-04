@@ -762,6 +762,22 @@ footer a {
   }
 }
 
+.aboutme,
+.agendamentos {
+  height: 500px;
+}
+
+.agendamentos .item {
+  margin-bottom: 5px;
+}
+
+.botao {
+  position: sticky;
+  float: right;
+  margin-right: 60px;
+  margin-top: 5rem;
+}
+
 @media (max-width: 1050px) {
   .index-main h1 {
     font-size: 45px;
@@ -812,6 +828,26 @@ footer a {
     flex-wrap: nowrap;
     width: 95%;
   }
+
+  .aboutme,
+  .agendamentos {
+    width: 90%;
+  }
+
+  .agendamentos .item {
+    margin-bottom: -15px;
+  }
+
+  .item h3 {
+    font-size: 15px;
+  }
+
+  .botao {
+    position: sticky;
+    float: right;
+    margin-right: 30px;
+    margin-top: 5rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -836,6 +872,15 @@ footer a {
 
   .login-right {
     padding-left: 0;
+  }
+
+  .agendamentos .item {
+    font-size: 12px;
+    margin-bottom: -5px;
+  }
+
+  .agendamentos .info {
+    margin-left: 80px;
   }
 }
 
@@ -893,7 +938,7 @@ footer a {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 435px) {
   .index-about img {
     width: 90%;
     margin-bottom: 70px;
@@ -943,6 +988,67 @@ footer a {
     flex-wrap: wrap;
     align-content: flex-end;
   }
+
+  .card-produto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .card-header {
+    margin-right: 0;
+  }
+
+  .avaliacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .card-data {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .card-body {
+    width: 95%;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    /* align-items: flex-start; */
+  }
+
+  .card-footer button {
+    width: 405px;
+  }
+
+  .card-descricao {
+    width: 405px;
+    height: 90px;
+  }
+
+  .container-perfil {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+
+  .botao {
+    position: sticky;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15rem;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -960,5 +1066,39 @@ footer a {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     width: 350px;
+  }
+
+  .card-header {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    width: 350px;
+  }
+
+  .card-data input {
+    width: 175px;
+  }
+  .card-data {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .card-img img {
+    width: 350px;
+    height: 340px;
+    object-fit: cover;
+  }
+  .card-footer button {
+    width: 350px;
+  }
+
+  .card-descricao {
+    width: 350px;
+    height: 85px;
   }
 }
