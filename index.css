@@ -310,11 +310,13 @@ input:focus {
 }
 
 /* PAG_INICIAL */
-.pag_inicial-container_inicial {
-  display: flex;
-  padding-top: 10rem;
-  min-height: 100vh;
-  flex-wrap: wrap;
+.pag_inicial-container_inicial
+ {
+    display: flex;
+    padding-top: 10rem;
+    min-height: 100vh;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
 .pag_inicial-profile-container {
   position: relative;
@@ -652,7 +654,7 @@ input:focus {
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  width: 600px;
+  width: 400px;
 }
 
 .sobrevc {
@@ -691,7 +693,7 @@ input:focus {
   border-radius: 10px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  width: 600px;
+  width: 400px;
 }
 
 .agenda {
@@ -710,12 +712,13 @@ input:focus {
 .agendamentos .item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
+  padding: 2px;
   margin-bottom: 15px;
+  font-size: 10px;
 }
 
 .item .info {
-  margin-left: 200px;
+  margin-left: 100px;
 }
 
 .botao {
@@ -726,6 +729,9 @@ input:focus {
   border-radius: 4px;
   background-color: #000;
   cursor: pointer;
+  float: right;
+  margin-right: 200px;
+  margin-top: 100px;
 }
 
 .botao:active {
@@ -819,8 +825,8 @@ textarea {
   background-color: #000;
   cursor: pointer;
   float: right;
-  margin-right: 25rem;
-  margin-top: 5rem;
+  margin-right: 15rem;
+  margin-top: 3rem;
 }
 
 /* Footer */
@@ -902,9 +908,7 @@ footer a {
     padding: 12px;
     margin-left: 200px;
   }
-}
-
-.aboutme,
+  .aboutme,
 .agendamentos {
   height: 500px;
 }
@@ -919,6 +923,9 @@ footer a {
   margin-right: 60px;
   margin-top: 5rem;
 }
+
+}
+
 
 @media (max-width: 1050px) {
   .index-main h1 {
