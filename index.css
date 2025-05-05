@@ -473,6 +473,52 @@ input:focus {
   font-weight: bold;
 }
 
+/* PAG_INICIAL_BARBEIRO */
+
+.barbeiro-agendamentos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.agendamentos-coluna {
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  width: 250px;
+}
+
+.agendamentos-coluna h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.agendamento-item {
+  font-size: 13px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.agendamento-item i {
+  margin-right: 6px;
+  color: #333;
+}
+
+.agendamento-item p {
+  margin: 4px 0;
+  color: #333;
+}
+
+.agendamento-item small {
+  color: #777;
+  font-size: 12px;
+}
+
 /* Barbeiros */
 
 .back-button {
@@ -594,19 +640,19 @@ input:focus {
 /*Meu perfil */
 
 .container-perfil {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  margin-top: 150px;
-  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  margin-top: 10rem;
 }
 
 .aboutme {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   width: 600px;
-  height: 600px;
-  border-radius: 3px;
-  padding: 15px;
-  box-shadow: 0px 0px 3px rgb(58, 58, 58);
 }
 
 .sobrevc {
@@ -641,11 +687,11 @@ input:focus {
 }
 
 .agendamentos {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
   width: 600px;
-  height: 600px;
-  border-radius: 3px;
-  padding: 15px;
-  box-shadow: 0px 0px 3px rgb(58, 58, 58);
 }
 
 .agenda {
@@ -673,10 +719,6 @@ input:focus {
 }
 
 .botao {
-  position: sticky;
-  float: right;
-  margin-right: 180px;
-  margin-top: 5rem;
   width: 150px;
   height: 30px;
   color: white;
@@ -688,6 +730,97 @@ input:focus {
 
 .botao:active {
   transform: scale(0.9);
+}
+
+/* Perfil barbearia */
+
+.perfil-container {
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 400px;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.card input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.loc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.loc-grid input {
+  margin-top: 0;
+}
+
+.preco {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.preco span {
+  font-size: 20px;
+  vertical-align: super;
+}
+
+.btn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.salvar {
+  width: 150px;
+  height: 30px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  cursor: pointer;
+  float: right;
+  margin-right: 25rem;
+  margin-top: 5rem;
 }
 
 /* Footer */
@@ -759,6 +892,15 @@ footer a {
     width: 70%;
     padding: 12px;
     margin-left: 50px;
+  }
+  .pag_inicial-pesquisa {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 12px;
+    margin-left: 200px;
   }
 }
 
@@ -847,6 +989,23 @@ footer a {
     float: right;
     margin-right: 30px;
     margin-top: 5rem;
+  }
+
+  .barbeiro-agendamentos-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 32px;
+    margin-top: 40px;
+    width: 90%;
+  }
+  .pag_inicial-pesquisa {
+    display: flex;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    padding: 12px;
+    margin-left: 150px;
   }
 }
 
@@ -1049,9 +1208,18 @@ footer a {
     margin-top: 15rem;
     margin-bottom: 50px;
   }
+
+  .barbeiro-agendamentos-container {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media (max-width: 375px) {
+@media (max-wimax-width: 375px) {
   .pag_inicial-cards-grid {
     margin: 0 auto;
     display: flex;

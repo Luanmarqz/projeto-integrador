@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="shortcut icon"
+      href="images/logo_barbertech.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-left">
+        <p>Perfil</p>
+      </div>
+      <div class="nav-right">
+        <div
+          class="pag_inicial-profile-container"
+          id="pag_inicial-profileContainer"
+        >
+          <div
+            class="pag_inicial-profile-button"
+            id="pag_inicial-profileButton"
+          >
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+          </div>
+          <div class="pag_inicial-dropdown" id="pag_inicial-dropdownMenu">
+            <a href="perfil">Meu Perfil</a>
+            <a href="#">Configurações</a>
+            <a href="index.html">Sair</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav">
+      <div class="nav-left">
+        <p>Perfil</p>
+      </div>
+      <div class="nav-right">
+        <div
+          class="pag_inicial-profile-container"
+          id="pag_inicial-profileContainer"
+        >
+          <div
+            class="pag_inicial-profile-button"
+            id="pag_inicial-profileButton"
+          >
+            <i class="fa-solid fa-user"></i>
+            <span>Perfil</span>
+          </div>
+          <div class="pag_inicial-dropdown" id="pag_inicial-dropdownMenu">
+            <a href="perfil">Meu Perfil</a>
+            <a href="#">Configurações</a>
+            <a href="index.html">Sair</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <span class="back-button"
+      ><a href="pag_inicial_barbeiro.html"
+        ><i class="fa-solid fa-arrow-left"></i></a
+    ></span>
+
+    <div class="perfil-container">
+      <div class="card empresa">
+        <h2>Sobre a Empresa</h2>
+        <label for="razao">Razão Social</label>
+        <input type="text" id="razao" placeholder="Digite aqui" />
+
+        <label>Horario de Funcionamento</label>
+        <select>
+          <option>Domingo</option>
+          <option>Segunda</option>
+          <option>Terca</option>
+          <option>Quarta</option>
+          <option>Quinta</option>
+          <option>Sexta</option>
+          <option>Sabado</option>
+        </select>
+        <select>
+          <option>Domingo</option>
+          <option>Segunda</option>
+          <option>Terca</option>
+          <option>Quarta</option>
+          <option>Quinta</option>
+          <option>Sexta</option>
+          <option>Sabado</option>
+        </select>
+
+        <label>Localização</label>
+        <div class="loc-grid">
+          <input type="text" placeholder="Rua" />
+          <input type="text" placeholder="Bairro" />
+          <input type="text" placeholder="Numero" />
+          <input type="text" placeholder="Estado" />
+          <input type="text" placeholder="Cidade" />
+        </div>
+      </div>
+
+      <div class="card servico">
+        <h2>Sobre seus serviços</h2>
+        <label for="servico">Serviço</label>
+        <input type="text" id="servico" placeholder="Digite aqui" />
+
+        <label>Preço</label>
+        <div class="preco"><span>$</span><strong>50</strong></div>
+        <button class="btn">Editar Preço</button>
+
+        <label>Sobre</label>
+        <textarea
+          placeholder="Digite aqui as informações sobre o serviço"
+        ></textarea>
+
+        <button class="btn">Adicionar Serviço a sua Loja</button>
+      </div>
+    </div>
+
+    <button class="salvar">Alterar e Salvar</button>
+  </body>
+</html>
